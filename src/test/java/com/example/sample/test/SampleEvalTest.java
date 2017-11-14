@@ -23,7 +23,7 @@ public class SampleEvalTest {
   public void serverEvalTest() {
     ServerEvaluationCall query = client.newServerEval().javascript("1+1");
     int answer = query.eval().next().getNumber().intValue();
-    assertEquals("Return should be 2", 2, answer);
+    assertEquals("Return value should be 2", 2, answer);
   }
 
   @AfterClass

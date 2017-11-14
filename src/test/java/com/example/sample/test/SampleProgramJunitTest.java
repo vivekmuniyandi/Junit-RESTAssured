@@ -33,9 +33,10 @@ public class SampleProgramJunitTest {
     assertEquals(4.0, s.divide(16, 4), 0.0002);
     try {
       s.divide(10, 0);
-      fail("Should have thrown an illegal argument exception");
     } catch (IllegalArgumentException e) {
       System.out.println("Expected exception because it is a divide by zero error");
+    } catch (Exception e) {
+      fail("Should have thrown an illegal argument exception");
     }
   }
 }

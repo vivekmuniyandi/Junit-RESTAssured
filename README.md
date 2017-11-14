@@ -1,5 +1,5 @@
 # Junit+RESTAssured
-A sample project which you can just download and get started with Junit and RESTAssured tests
+A sample project which you can just download and get started with [Junit](http://junit.org/junit4/) and [RESTAssured](http://rest-assured.io/) tests
 
 ## How to Setup?
 Download the project or do a clone of the project. You will have Junit and RESTAssured dependencies already included in the gradle file and you can simply start writing your Junit and RESTAssured tests right away. You can just go to src/test/java and add your Junit and RESTAssured test files in there.
