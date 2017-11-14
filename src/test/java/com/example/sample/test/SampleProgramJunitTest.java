@@ -3,6 +3,7 @@ package com.example.sample.test;
 import static org.junit.Assert.*;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.example.sample.SampleProgram;
@@ -17,24 +18,14 @@ public class SampleProgramJunitTest {
   }
 
   @Test
-  public void testAdd() {
-    assertEquals(4, s.add(2, 2));
-  }
-
-  @Test
-  public void testSubtract() {
-    assertEquals(10, s.subtract(15, 5));
-  }
-
-  @Test
   public void testMultiply() {
     assertEquals(6, s.multiply(3, 2));
     assertTrue(s.multiply(4, 2) == 8);
   }
 
-  // @Test
+  @Ignore
   public void failingTest() {
-    assertFalse(9 == s.add(4, 5));
+    assertFalse(9 == s.multiply(4, 5));
   }
 
   @Test

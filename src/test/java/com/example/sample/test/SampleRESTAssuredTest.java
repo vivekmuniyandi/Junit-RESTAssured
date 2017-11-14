@@ -9,11 +9,15 @@ public class SampleRESTAssuredTest {
 
   @Test
   public void checkStatus() {
-    RestAssured.given().when().get("http://localhost:8184/sample").then().statusCode(200);
+    RestAssured.given()
+      .when().log().all().get("http://www.marklogic.com")
+      .then().log().all().statusCode(200);
   }
 
   @Test
   public void checkContent() {
-    RestAssured.given().when().get("http://localhost:8184/sample").then().body("result", Matchers.equalTo("success"));
+    RestAssured.given()
+      .when().get("http://localhost:8184/sample")
+      .then().body("result", Matchers.equalTo("success"));
   }
 }

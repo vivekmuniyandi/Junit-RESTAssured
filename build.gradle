@@ -9,6 +9,7 @@ repositories {
 // In this section you declare the dependencies for your production and test code
 dependencies {
     compile group: 'org.restlet.jee', name: 'org.restlet', version: '2.3.2'
+	compile 'com.marklogic:marklogic-client-api:4.0.2'
 	
     // JUnit & RESTAssured
     testCompile 'io.rest-assured:rest-assured:3.0.5'
